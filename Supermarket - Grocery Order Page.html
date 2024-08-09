@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrocieMart</title>
+    <link rel="stylesheet" href="STYLE.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="container">
+                <h1 class="webname">GrocieMart</h1>
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="hamburger-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </label>
+                <div class="navbar">
+                    <ul>
+                        <li><a href="index.html">Home page</a></li>
+                        <li><a href="Supermarket - About Us.html">About Us</a></li>
+                        <li><a href="Supermarket - Dairy products.html">Dairy Products</a></li>
+                        <li><a href="Supermarket - Vegetables.html">Vegetables</a></li>
+                        <li><a href="Supermarket - Cosmetics.html">Cosmetics and Skin Care Products</a></li>
+                        <li><a href="Supermarket - Grocery Order Page.html">Grocery Order Page</a></li>
+                        <li><a class="loyaltyregistration" href="Supermarket - Loyalty registration page.html">Loyalty Registration</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <section>
+            <h2 class="Grocery-order-head">Grocery Order Page</h2><br><br>
+            <form class="grocery-order">
+                <fieldset class="GOP">
+                    <legend>Fruits</legend>
+                    <p>
+                        <label for="fruits-gproduct">Product:</label>
+                        <select id="fruits-gproduct" name="fruits-gproduct" required>
+                            <option value="">Select a product</option>
+                            <option value="Apple">Apple</option>
+                            <option value="Banana">Banana</option>
+                            <option value="Orange">Orange</option>
+                            <option value="Grapes">Grapes</option>
+                            <option value="Strawberry">Strawberry</option>
+                            <option value="Mango">Mango</option>
+                        </select><br><br>
+                        <label for="fruits-gamount">Amount (kg):</label>
+                        <input type="number" id="fruits-gamount" name="fruits-gamount" min="0" step="0.1">
+                    </p><br><br>
+                    <button class="grocery-order-button" type="button" id="fruits-button">Add Fruits</button>
+                </fieldset>
+
+                <fieldset class="GOP">
+                    <legend>Vegetables</legend>
+                    <p>
+                        <label for="vegetables-gproduct">Product:</label>
+                        <select id="vegetables-gproduct" name="vegetables-gproduct" required>
+                            <option value="">Select a product</option>
+                            <option value="Tomato">Tomato</option>
+                            <option value="Potato">Potato</option>
+                            <option value="Carrot">Carrot</option>
+                            <option value="Cabbage">Cabbage</option>
+                            <option value="Beetroot">Beetroot</option>
+                            <option value="Onions">Onions</option>
+                        </select><br><br>
+                        <label for="vegetables-gamount">Amount (kg):</label>
+                        <input type="number" id="vegetables-gamount" name="vegetables-gamount" min="0" step="0.1">
+                    </p><br><br>
+                    <button class="grocery-order-button" type="button" id="vegetables-button">Add Vegetables</button>
+                </fieldset>
+
+                <fieldset class="GOP">
+                    <legend>Dairy Produce</legend>
+                    <p>
+                        <label for="dairy-gproduct">Product:</label>
+                        <select id="dairy-gproduct" name="dairy-gproduct" required>
+                            <option value="">Select a product</option>
+                            <option value="Kotmale Fresh Milk">Kotmale Fresh Milk</option>
+                            <option value="Happy Cow Cheese">Happy Cow Cheese</option>
+                            <option value="Anchor Newdale Yogurt">Anchor Newdale Yogurt</option>
+                            <option value="Astra Butter">Astra Butter</option>
+                            <option value="Anchor Milk Powder">Anchor Milk Powder</option>
+                            <option value="Munchee Milk Biscuits">Munchee Milk Biscuits</option>
+                        </select><br><br>
+                        <label for="dairy-gamount">Amount (quantity):</label>
+                        <input type="number" id="dairy-gamount" name="dairy-gamount" min="0" step="1">
+                    </p><br><br>
+                    <button class="grocery-order-button"  type="button" id="dairy-button">Add Dairy Products</button>
+                </fieldset>
+
+                <fieldset class="GOP">
+                    <legend>Meat and Seafood</legend>
+                    <p>
+                        <label for="meat-gproduct">Product:</label>
+                        <select id="meat-gproduct" name="meat-gproduct" required>
+                            <option value="">Select a product</option>
+                            <option value="Chicken">Chicken</option>
+                            <option value="Fish">Fish</option>
+                            <option value="Beef">Beef</option>
+                            <option value="Mutton">Mutton</option>
+                            <option value="Prawns">Prawns</option>
+                            <option value="Crab">Crab</option>
+                        </select><br><br>
+                        <label for="meat-gamount">Amount (kg):</label>
+                        <input type="number" id="meat-gamount" name="meat-gamount" min="0" step="0.1">
+                    </p><br><br>
+                    <button class="grocery-order-button" type="button" id="meat-button">Add Meats and Seafood</button>
+                </fieldset>
+
+                <fieldset class="GOP">
+                    <legend>Baking and Cooking Ingredients</legend>
+                    <p>
+                        <label for="baking-gproduct">Product:</label>
+                        <select id="baking-gproduct" name="baking-gproduct" required>
+                            <option value="">Select a product</option>
+                            <option value="Flour">Flour</option>
+                            <option value="Sugar">Sugar</option>
+                            <option value="Eggs">Eggs</option>
+                            <option value="Baking Powder">Baking Powder</option>
+                            <option value="Whipping Cream">Whipping Cream</option>
+                            <option value="Vanilla essence">Vanilla essence</option>
+                        </select><br><br>
+                        <label for="baking-gamount">Amount (kg):</label>
+                        <input type="number" id="baking-gamount" name="baking-gamount" min="0" step="1">
+                    </p><br><br>
+                    <button class="grocery-order-button" type="button" id="Baking-button">Add Baking and Cooking Ingredients</button>
+                </fieldset><br><br>
+            </form>
+        </section>
+
+        <br><br><br>
+        <h2>Cart</h2>
+        <br><br>
+        <table id="cartTable">
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Item</th>
+                    <th>Amount</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Total</td>
+                    <td id="totalPrice">0</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <br><br>
+        <button class="button add-to-favorites" type="button">Add to Favourites</button>
+        <button class="button apply-favorites" type="button">Apply Favourites</button>
+        <button class="button buy-now" type="button">Buy Now</button>
+
+
+        <script src="script.js"></script>
+    </main><br><br><br><br><br>
+
+
+    <footer>
+        <div class="footer-content">
+            <p>Phone: +94 75 523 4835</p>
+            <p>Email: info@grociessupermarket.lk</p>
+            <p>Address: LAUGFS Supermarket, Kolonnawa, Sri Lanka</p>
+            <p>&copy; 2024 Grocies Supermarket. All rights reserved.</p><br>
+        </div>
+    </footer>
+
+
+</body>
+</html>

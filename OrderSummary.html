@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrocieMart</title>
+    <link rel="stylesheet" href="STYLE.css">
+</head>
+<body>
+
+<header>
+
+<nav>
+    <div class="container">
+            <h1 class="webname">GrocieMart</h1>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </label>
+            <div class="navbar">
+        
+            <ul>
+            <li><a href="index.html">Home page</a></li>
+            <li><a href="Supermarket - About Us.html">About Us</a></li>
+            <li><a href="Supermarket - Dairy products.html">Dairy Products</a></li>
+            <li><a href="Supermarket - Vegetables.html">Vegetables</a></li>
+            <li><a href="Supermarket - Cosmetics.html">Cosmetics and Skin Care Products</a></li>
+            <li><a href="Supermarket - Grocery Order Page.html">Grocery Order Page</a></li>
+            <li><a class="loyaltyregistration" href="Supermarket - Loyalty registration page.html">Loyalty Registration</a></li>
+        </ul>
+        </div>
+    </nav>
+    </header><hr>
+
+    <hr>
+
+    <main>
+        <form class="orderForm" id="orderForm">
+        <section>
+            <h2>Order Summary</h2><br><br>
+            <table id="summaryTable">
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Item</th>
+                        <th>Amount</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Total</td>
+                        <td id="orderTotal">0</td>
+                    </tr>
+                </tfoot>
+            </table><br><br>
+
+            
+                <fieldset>
+                    <legend><b>Personal Details</b></legend><br>
+                    <p>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </p>
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </p>
+                    <p>
+                        <label for="phone-num">Phone Number</label>
+                        <input type="number" id="phone-num" name="phone-num" required>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend><b>Delivery Details</b></legend><br>
+                    <p>
+                        <label for="address">Address:</label>
+                        <input type="text" id="address" name="address" required>
+                    </p>
+                    <p>
+                        <label for="city">City:</label>
+                        <input type="text" id="city" name="city" required>
+                    </p>
+                    <p>
+                        <label for="province">Province:</label>
+                        <select id="province" name="province" required>
+                            <option value="">Select a province</option> 
+                            <option value="western">Western Province</option>
+                            <option value="southern">Southern Province</option>
+                            <option value="central">Central Province</option>
+                            <option value="sabaragamuwa">Sabaragamuwa Province</option>
+                            <option value="eastern">Eastern Province</option>
+                            <option value="north-central">North Central Province</option>
+                            <option value="northern">Northern Province</option>
+                        </select>
+                    </p>
+                </fieldset><br>
+                <fieldset>
+                    <legend><b>Payment Information</b></legend><br>
+                    <p>
+                        <label for="payment-option">Payment Option:</label>
+                        <select id="payment-option" name="payment-option" required>
+                            <option value="">Select a payment option</option>
+                            <option value="cash">Cash</option>
+                            <option value="visa">Visa</option>
+                            <option value="mastercard">Mastercard</option>
+                        </select>
+                    </p>
+                </fieldset><br>
+                <button id="submitOrderButton" type="submit">Pay</button>
+                <p id="thankYouMessage"></p>
+            </form>
+        </section>
+    </main>
+
+    <script src="order-summary.js"></script>
+    <script></script>
+</body>
+</html> 
+
+
+
+
+
