@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrocieMart</title>
+    <link rel="stylesheet" href="STYLE.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="container">
+                <h1 class="webname">GrocieMart</h1>
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="hamburger-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </label>
+                <div class="navbar">
+                    <ul>
+                        <li><a href="index.html">Home page</a></li>
+                        <li><a href="Supermarket - About Us.html">About Us</a></li>
+                        <li><a href="Supermarket - Dairy products.html">Dairy Products</a></li>
+                        <li><a href="Supermarket - Vegetables.html">Vegetables</a></li>
+                        <li><a href="Supermarket - Cosmetics.html">Cosmetics and Skin Care Products</a></li>
+                        <li><a href="Supermarket - Pharmacy Order Page.html">Pharmacy Order Page</a></li>
+                        <li><a class="loyaltyregistration" href="Supermarket - Loyalty registration page.html">Loyalty Registration</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <section>
+            <h2 class="Pharmacy-order-head">Order Page</h2><br><br>
+            <form class="pharmacy-order">
+                <fieldset class="POP">
+                    <legend><b>Analgesics</b></legend><br>
+                    <p>
+                        <label for="analgesics-gproduct">Product:</label>
+                        <select id="analgesics-gproduct" name="analgesics-gproduct" required>
+                            <option value="">Select a product</option>
+                            <option value="Paracetamol">Paracetamol</option>
+                            <option value="Ibuprofen">Ibuprofen</option>
+                            <option value="Aspirin">Aspirin</option>
+                            <option value="Codeine">Codeine</option>
+                            <option value="Tramadol">Tramadol</option>
+                            <option value="Naproxen">Naproxen</option>
+                        </select><br><br>
+                        <label for="analgesics-gamount">Amount (mg):</label>
+                        <input type="number" id="analgesics-gamount" name="analgesics-gamount" min="0" step="1">
+                    </p><br>
+                    <button class="pharmacy-order-button" type="button" id="analgesics-button">Add Analgesics</button>
+                </fieldset><br>
+
+                <fieldset class="POP">
+                    <legend><b>Antibiotics</b></legend><br>
+                    <p>
+                        <label for="antibiotics-gproduct">Product:</label>
+                        <select id="antibiotics-gproduct" name="antibiotics-gproduct" required>
+                            <option value="">Select a product</option>
+                            <option value="Amoxicillin">Amoxicillin</option>
+                            <option value="Ciprofloxacin">Ciprofloxacin</option>
+                            <option value="Doxycycline">Doxycycline</option>
+                            <option value="Azithromycin">Azithromycin</option>
+                            <option value="Clindamycin">Clindamycin</option>
+                            <option value="Levofloxacin">Levofloxacin</option>
+                        </select><br><br>
+                        <label for="antibiotics-gamount">Amount (mg):</label>
+                        <input type="number" id="antibiotics-gamount" name="antibiotics-gamount" min="0" step="1">
+                    </p><br>
+                    <button class="pharmacy-order-button" type="button" id="antibiotics-button">Add Antibiotics</button>
+                </fieldset><br>
+
+                <fieldset class="POP">
+                    <legend><b>Antidepressants</b></legend><br>
+                    <p>
+                        <label for="antidepressants-gproduct">Product:</label>
+                        <select id="antidepressants-gproduct" name="antidepressants-gproduct" required>
+                            <option value="">Select a product</option>
+                            <option value="Fluoxetine">Fluoxetine</option>
+                            <option value="Sertraline">Sertraline</option>
+                            <option value="Escitalopram">Escitalopram</option>
+                            <option value="Paroxetine">Paroxetine</option>
+                            <option value="Venlafaxine">Venlafaxine</option>
+                            <option value="Amitriptyline">Amitriptyline</option>
+                        </select><br><br>
+                        <label for="antidepressants-gamount">Amount (mg):</label>
+                        <input type="number" id="antidepressants-gamount" name="antidepressants-gamount" min="0" step="1">
+                    </p><br>
+                    <button class="pharmacy-order-button" type="button" id="antidepressants-button">Add Antidepressants</button>
+                </fieldset><br>
+                
+                <fieldset class="POP">
+                    <legend><b>Antihistamines</b></legend><br>
+                    <p>
+                        <label for="antihistamines-gproduct">Product:</label>
+                        <select id="antihistamines-gproduct" name="antihistamines-gproduct" required>
+                            <option value="">Select a product</option>
+                            <option value="Diphenhydramine">Diphenhydramine</option>
+                            <option value="Loratadine">Loratadine</option>
+                            <option value="Cetirizine">Cetirizine</option>
+                            <option value="Fexofenadine">Fexofenadine</option>
+                            <option value="Chlorpheniramine">Chlorpheniramine</option>
+                            <option value="Levocetirizine">Levocetirizine</option>
+                        </select><br>
+                        <label for="antihistamines-gamount">Amount (mg):</label>
+                        <input type="number" id="antihistamines-gamount" name="antihistamines-gamount" min="0" step="1">
+                    </p><br>
+                    <button class="pharmacy-order-button" type="button" id="antihistamines-button">Add Antihistamines</button>
+                </fieldset><br>
+
+                <fieldset class="POP">
+                    <legend><b>Antihypertensives</b></legend><br>
+                    <p>
+                        <label for="antihypertensives-gproduct">Product:</label>
+                        <select id="antihypertensives-gproduct" name="antihypertensives-gproduct" required>
+                            <option value="">Select a product</option>
+                            <option value="Amlodipine">Amlodipine</option>
+                            <option value="Losartan">Losartan</option>
+                            <option value="Lisinopril">Lisinopril</option>
+                            <option value="Hydrochlorothiazide">Hydrochlorothiazide</option>
+                            <option value="Metoprolol">Metoprolol</option>
+                            <option value="Clonidine">Clonidine</option>
+                        </select><br><br>
+                        <label for="antihypertensives-gamount">Amount (mg):</label>
+                        <input type="number" id="antihypertensives-gamount" name="antihypertensives-gamount" min="0" step="1">
+                    </p><br>
+                    <button class="pharmacy-order-button" type="button" id="antihypertensives-button">Add Antihypertensives</button>
+                </fieldset><br>
+            </form>
+        </section>
+
+        <h2>Cart</h2>
+        <table id="cartTable">
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Product</th>
+                    <th>Amount</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+            
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td id="productQuantity">0</td>
+                    <td colspan="2">Total</td>
+                    <td id="totalPrice">0</td>
+                </tr>
+            </tfoot>
+        </table>
+
+        <button class="button add-to-favorites" type="button">Add to Favorites</button>
+        <button class="button apply-favorites" type="button">Apply Favorites</button>
+        <button class="button buy-now" type="button">Buy Now</button>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>Phone: +94 75 523 4835</p>
+            <p>Email: info@pharmamart.lk</p>
+            <p>Address: PharmaMart, Kolonnawa, Sri Lanka</p>
+            <p>&copy; 2025 PharmaMart. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
